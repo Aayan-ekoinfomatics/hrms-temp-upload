@@ -137,10 +137,10 @@ const Events = () => {
     })
 
 
-    axios.get(import.meta.env.VITE_BASE_ADDRESS + 'event_list_view').then((response) => {
-      console.log(response?.data)
-      setEventsData(response?.data)
-    })
+    // axios.get(import.meta.env.VITE_BASE_ADDRESS + 'event_list_view').then((response) => {
+    //   console.log(response?.data)
+    //   setEventsData(response?.data)
+    // })
 
   }, []);
 
@@ -206,7 +206,7 @@ const Events = () => {
                   </div>
                   <div className='w-full grid grid-cols-[120px_auto_auto_auto]  border-b border-l border-r rounded-b-[15px] bg-white max-h-[600px] overflow-y-scroll pb-5'>
                     {
-                      eventsData?.filter((filterValue) => {
+                      events_data?.filter((filterValue) => {
                         if (searchData === '') {
                           return filterValue
                         } else if (filterValue?.event?.toLowerCase()?.includes(searchData?.toLowerCase()) || filterValue?.start_date[0]?.toLowerCase()?.includes(searchData?.toLowerCase()) || filterValue?.start_date[1]?.toLowerCase()?.includes(searchData?.toLowerCase()) || filterValue?.joining_date?.toLowerCase()?.includes(searchData?.toLowerCase())) {
