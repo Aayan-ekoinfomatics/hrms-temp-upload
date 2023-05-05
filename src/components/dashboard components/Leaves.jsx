@@ -33,12 +33,12 @@ const Leaves = () => {
                             <h1 className='text-[18px] md:text-[20px] font-[500]'>Leaves</h1>
                         </div>
                         <button className=''>
-                            <AddRoundedIcon className="text-white bg-[#5f66e1] w-full rounded-md active:scale-[0.9] active:text-[#5f65e1e1] transition-all duration-100" fontSize='medium' onClick={() => {
+                            {/* <AddRoundedIcon className="text-white bg-[#5f66e1] w-full rounded-md active:scale-[0.9] active:text-[#5f65e1e1] transition-all duration-100" fontSize='medium' onClick={() => {
                                 setPopUpToggle({
                                     ...popUpToggle,
                                     leavesPopUpToggle: true,
                                 })
-                            }} />
+                            }} /> */}
                         </button>
                     </div>
                 </div>

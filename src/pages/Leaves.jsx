@@ -6,36 +6,38 @@ import CancelRoundedIcon from '@mui/icons-material/CancelRounded';
 
 const Leaves = () => {
 
-  const titles = ['S. No', 'ID', 'Name', 'Designation', 'From Date', 'To Date', 'Reason', 'Actions'];
+  const titles = ['S. No', 'ID', 'Name', 'Type', 'From Date', 'To Date', 'Reason', 'Actions'];
 
   const accountData = [
 
-    { id: 1, emp_id: '1260', name: "John Doe", designation: 'Backend Developer', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
-    { id: 2, emp_id: '1261', name: "Lauran Karen", designation: 'Frontend Developer', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
-    { id: 3, emp_id: '1262', name: "Darshana Deka", designation: 'Salseforce Developer', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
-    { id: 4, emp_id: '1264', name: "Dolly Jonson", designation: 'Frontend Developer', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
-    { id: 5, emp_id: '1265', name: "Jack Trule", designation: 'Backend Developer', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
-    { id: 6, emp_id: '1266', name: "Karen Mira", designation: 'Frontend Developer', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
-    { id: 7, emp_id: '1267', name: "James Camry", designation: 'Salseforce Developer', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
-    { id: 8, emp_id: '1268', name: "Agato Corlea", designation: 'Frontend Developer', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
-    { id: 1, emp_id: '1260', name: "Jector James", designation: 'Backend Developer', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
-    { id: 2, emp_id: '1261', name: "Gabriel Mantez", designation: 'Frontend Developer', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
-    { id: 3, emp_id: '1262', name: "Dom Noe", designation: 'Salseforce Developer', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
-    { id: 4, emp_id: '1264', name: "Christian Gyllenhall", designation: 'Frontend Developer', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
-    { id: 5, emp_id: '1265', name: "Mak Makrus", designation: 'Backend Developer', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
-    { id: 6, emp_id: '1266', name: "Lauran Karen", designation: 'Frontend Developer', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
-    { id: 7, emp_id: '1267', name: "Darshana Deka", designation: 'Salseforce Developer', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
-    { id: 8, emp_id: '1268', name: "Lauran Karen", designation: 'Frontend Developer', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
+    { id: 1, emp_id: '1260', name: "John Doe", designation: 'Casual', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
+    { id: 2, emp_id: '1261', name: "Lauran Karen", designation: 'Paid', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
+    { id: 3, emp_id: '1262', name: "Darshana Deka", designation: 'Casual', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
+    { id: 4, emp_id: '1264', name: "Dolly Jonson", designation: 'Medical', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
+    { id: 5, emp_id: '1265', name: "Jack Trule", designation: 'Paid', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
+    { id: 6, emp_id: '1266', name: "Karen Mira", designation: 'Medical', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
+    { id: 7, emp_id: '1267', name: "James Camry", designation: 'Medical', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
+    { id: 8, emp_id: '1268', name: "Agato Corlea", designation: 'Paid', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
+    { id: 1, emp_id: '1260', name: "Jector James", designation: 'Casual', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
+    { id: 2, emp_id: '1261', name: "Gabriel Mantez", designation: 'Paid', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
+    { id: 3, emp_id: '1262', name: "Dom Noe", designation: 'Medical', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
+    { id: 4, emp_id: '1264', name: "Christian Gyllenhall", designation: 'Paid', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
+    { id: 5, emp_id: '1265', name: "Mak Makrus", designation: 'Casual', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
+    { id: 6, emp_id: '1266', name: "Lauran Karen", designation: 'Paid', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
+    { id: 7, emp_id: '1267', name: "Darshana Deka", designation: 'Medical', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
+    { id: 8, emp_id: '1268', name: "Lauran Karen", designation: 'Paid', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
   ];
 
   const accountArchivedData = [
 
-    { id: 1, emp_id: '1260', name: "John Doe", designation: 'Backend Developer', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
-    { id: 2, emp_id: '1261', name: "Lauran Karen", designation: 'Frontend Developer', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
-    { id: 3, emp_id: '1262', name: "Darshana Deka", designation: 'Salseforce Developer', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
-    { id: 4, emp_id: '1264', name: "Dolly Jonson", designation: 'Frontend Developer', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
-    { id: 5, emp_id: '1265', name: "Jack Trule", designation: 'Backend Developer', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
-    { id: 6, emp_id: '1266', name: "Karen Mira", designation: 'Frontend Developer', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
+    { id: 1, emp_id: '1260', name: "John Doe", designation: 'Casual', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
+    { id: 2, emp_id: '1261', name: "Lauran Karen", designation: 'Paid', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
+    { id: 3, emp_id: '1262', name: "Darshana Deka", designation: 'Casual', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
+    { id: 4, emp_id: '1264', name: "Dolly Jonson", designation: 'Medical', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
+    { id: 5, emp_id: '1265', name: "Jack Trule", designation: 'Paid', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
+    { id: 6, emp_id: '1266', name: "Karen Mira", designation: 'Medical', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
+    { id: 7, emp_id: '1267', name: "James Camry", designation: 'Medical', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
+    { id: 8, emp_id: '1268', name: "Agato Corlea", designation: 'Paid', to_date: '19/12/23', from_date: '12/12/23', reason: "visiting home for sister's marriage", actions: '' },
   ];
 
   const [tabState, setTabState] = useState('All');
@@ -47,7 +49,7 @@ const Leaves = () => {
   const [signUpPopUpToggle, setSignUpPopUpToggle] = useState(false);
 
 
-  useEffect(() => {console.log(accountArchivedData)}, [])
+  useEffect(() => { console.log(accountArchivedData) }, [])
 
 
   return (
@@ -160,16 +162,20 @@ const Leaves = () => {
                 <>
                   {/* table content */}
                   <div className='w-full px-6 py-4'>
-                    <div className='w-full grid grid-cols-[5%_10%_12%_15%_12%_12%_auto_12%] border rounded-t-[15px] text-white py-5 bg-white'>
+                    <div className='w-full grid grid-cols-[5%_8%_12%_12%_15%_15%_auto] border rounded-t-[15px] text-white py-5 bg-white'>
                       {
-                        titles?.map((data, i) => (
-                          <div key={i} className='w-full flex justify-start pl-5 items-center text-gray-600 font-bold'>
-                            <h1>{data}</h1>
-                          </div>
-                        ))
+                        titles?.map((data, i) => {
+                          if (data !== 'Actions') {
+                            return (
+                              <div key={i} className='w-full flex justify-start pl-5 items-center text-gray-600 font-bold'>
+                                <h1>{data}</h1>
+                              </div>  
+                            )
+                          }
+                        })
                       }
                     </div>
-                    <div className='w-full grid grid-cols-[5%_10%_12%_15%_12%_12%_auto_12%]  border-b border-l border-r rounded-b-[15px] bg-white max-h-[600px] overflow-y-scroll pb-5'>
+                    <div className='w-full grid grid-cols-[5%_8%_12%_12%_15%_15%_auto]  border-b border-l border-r rounded-b-[15px] bg-white max-h-[600px] overflow-y-scroll pb-5'>
                       {
                         accountArchivedData?.filter((filterValue) => {
                           if (searchData === '') {
@@ -208,11 +214,11 @@ const Leaves = () => {
                                 <h1>{data?.reason}</h1>
                               </div>
 
-                              <div className='w-full flex justify-start pl-5 xl:pl-8 gap-4 items-center py-5 '>
-                                {/* <button><EditOutlinedIcon onClick={() => setSignUpPopUpToggle(!signUpPopUpToggle)} className='text-gray-600' fontSize='small' /></button> */}
+                              {/* <div className='w-full flex justify-start pl-5 xl:pl-8 gap-4 items-center py-5 '>
+                                <button><EditOutlinedIcon onClick={() => setSignUpPopUpToggle(!signUpPopUpToggle)} className='text-gray-600' fontSize='small' /></button>
                                 <button title='Approve'><DownloadDoneRoundedIcon onClick={() => console.log(data?.id)} className='text-green-600 active:scale-110 transition-all duration-200 ease-out' fontSize='large' /></button>
                                 <button title='Decline'><CancelRoundedIcon onClick={() => console.log(data?.id)} className='text-red-600 active:scale-110 transition-all duration-200 ease-out' fontSize='medium' /></button>
-                              </div>
+                              </div> */}
 
                             </React.Fragment>
                           )

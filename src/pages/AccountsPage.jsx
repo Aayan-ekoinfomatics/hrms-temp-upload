@@ -460,7 +460,7 @@ const AccountsPage = () => {
         <div className='pt-3 pl-3'>
           <CancelIcon onClick={() => setPopUpToggle({
             ...popUpToggle,
-            editAccountData: false
+            editAccountPopUp: false
           })} fontSize='medium' className='text-[var(--primary-color)] cursor-pointer active:scale-90 transition-all duration-200 ease-out' />
         </div>
         <div className='w-full flex justify-center items-center mt-3'>

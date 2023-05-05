@@ -30,12 +30,12 @@ const Attendance = () => {
                 <div className='w-[95%] mx-auto pt-5 pb-2 flex justify-between'>
                     <h1 className='text-[18px] md:text-[20px] font-[500]'>Attendance</h1>
                     <div>
-                        <EditIcon fontSize='medium' className="text-[#5f66e1] w-[25px] cursor-pointer active:scale-[0.9] active:text-[#5f65e1e1] transition-all duration-100" onClick={() => {
+                        {/* <EditIcon fontSize='medium' className="text-[#5f66e1] w-[25px] cursor-pointer active:scale-[0.9] active:text-[#5f65e1e1] transition-all duration-100" onClick={() => {
                             setPopUpToggle({
                                 ...popUpToggle,
                                 attendencePopUpToggle: true,
                             })
-                        }} />
+                        }} /> */}
                     </div>
                 </div>
                 <div className='w-[95%] mx-auto flex justify-between pt-4 pr-4 items-center'>
@@ -67,12 +67,12 @@ const Attendance = () => {
                 <div className='w-[90%] mx-auto py-2 flex justify-between'>
                     <h1 className='text-[18px] md:text-[20px] font-[500]'>Attendance</h1>
                     <div>
-                        <EditIcon fontSize='small' className="text-[#5f66e1] mr-2 w-[20px] cursor-pointer active:scale-[0.9] active:text-[#5f65e1e1] transition-all duration-100" onClick={() => {
+                        {/* <EditIcon fontSize='small' className="text-[#5f66e1] mr-2 w-[20px] cursor-pointer active:scale-[0.9] active:text-[#5f65e1e1] transition-all duration-100" onClick={() => {
                             setPopUpToggle({
                                 ...popUpToggle,
                                 attendencePopUpToggle: true,
                             })
-                        }} />
+                        }} /> */}
                     </div>
                 </div>
 

@@ -45,12 +45,12 @@ const TaskLog = () => {
                             <div className='w-full flex gap-3 items-end'>
                                 <input type="search" placeholder='search' className='outline-none px-2 py-1 w-[30%] ml-auto border-b border-b-[#5f66e1] text-[13px]' onChange={(e) => setSearchData(e.target.value)} />
                                 {/* <SearchRoundedIcon fontSize="medium" className="text-[#5f66e1]  w-[25px] cursor-pointer" /> */}
-                                <EditIcon fontSize="medium" className="text-[#5f66e1] w-[25px] cursor-pointer active:scale-[0.9] active:text-[#5f65e1e1] transition-all duration-100" onClick={() => {
+                                {/* <EditIcon fontSize="medium" className="text-[#5f66e1] w-[25px] cursor-pointer active:scale-[0.9] active:text-[#5f65e1e1] transition-all duration-100" onClick={() => {
                                     setPopUpToggle({
                                         ...popUpToggle,
                                         tasklogPopUpToggle: true
                                     })
-                                }} />
+                                }} /> */}
                             </div>
                         </div>
                     </div>
@@ -94,12 +94,12 @@ const TaskLog = () => {
                             <div className='w-full flex gap-3 items-end'>
                                 <input type="search" placeholder="search" className='outline-none px-2 py-1 w-full min-w-[70px] text-[12px] ml-auto border-b border-b-[#5f66e1]' onChange={(e) => setSearchDataMobile(e.target.value)} />
                                 {/* <SearchRoundedIcon fontSize="medium" className="text-[#5f66e1]  w-[25px] cursor-pointer" /> */}
-                                <EditIcon fontSize="small" className="text-[#5f66e1] w-[25px] cursor-pointer"  onClick={() => {
+                                {/* <EditIcon fontSize="small" className="text-[#5f66e1] w-[25px] cursor-pointer"  onClick={() => {
                                     setPopUpToggle({
                                         ...popUpToggle,
                                         tasklogPopUpToggle: true
                                     })
-                                }}/>
+                                }}/> */}
                             </div>
                         </div>
                     </div>
